@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main() 
+{
+  bool allEven;
+  // int a = 1;
+  // int b = 0;
+  // double sum = 0, avg = 0;
+  // while (a > 0)
+  //   {
+  //   cout << "Enter an integer (enter a negative number to end): ";
+  //     cin >> a;
+  //     if(a > 0)
+  //     {
+  //     b++;
+  //     sum += a;
+  //     }
+  //   }
+  // avg = sum /  (double) b;
+  // cout << "The sum of the numbers you have entered is: " << sum << endl;
+  // cout << "The average of " << sum << " using the " << b << " numbers you have entered is " << fixed << setprecision(2) << avg << endl;
+for(int i = 0; i < 3; i++)
+  {
+    int c = 0;
+    cout << "Enter 3 integers: ";
+    cin >> c;
+    if(c % 2 == 1)
+    {
+      allEven = false;
+    }
+  }
+
+  if(allEven)
+  {
+    cout << "All the integers you have entered are even";
+  }
+  else
+  {
+    cout << "One or more of the integers you have entered is/are odd";
+  }
+  
+  return 0;
+}
